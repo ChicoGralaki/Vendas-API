@@ -12,5 +12,6 @@ export const AppDataSource = new DataSource({
     synchronize: false,
     logging: true,
     entities: [Product],
-    migrations: [path.join("src", "shared", "typeorm", "migrations", "*.ts")]
+    migrations: [path.join("src", "shared", "typeorm", "migrations", "*.ts")],
+    subscribers: []
 });
